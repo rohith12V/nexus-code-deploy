@@ -22,7 +22,7 @@ pipeline {
             post {
                success {
                   echo 'Now Archiving it...'
-                  archiveArtifacts artifacts: '**/target/*.jar'
+                  archiveArtifacts artifacts: '**/target/*.war'
                }
             }
         }
@@ -98,9 +98,9 @@ pipeline {
                             // Classifier for the artifact (optional)
                             classifier: '',
                             // Path to the artifact file
-                            file: 'target/spring-boot-3-rest-api-example-0.0.1-SNAPSHOT.jar',
+                            file: 'target/rest-server-0.1.0.war',
                             // Type of the artifact (war in this case)
-                            type: 'jar'
+                            type: 'war'
                         ]
                     ]
                 )
