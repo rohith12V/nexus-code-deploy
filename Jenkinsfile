@@ -41,7 +41,7 @@ pipeline {
             }
         }
 
-        // Stage - 5
+        // Stage - 5d
         stage('Sonar Analysis') {
             environment {
                 scannerHome = tool 'sonarqube'
