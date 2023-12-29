@@ -11,6 +11,7 @@ public class Todos {
         todos.put(1L, new Todo(1L, "first todo"));
         todos.put(2L, new Todo(2L, "second todo"));
         todos.put(2L, new Todo(2L, "second todo"));
+        todos.put(2L, new Todo(2L, "second todo"));
     }
 
     public static Long nextId() {
